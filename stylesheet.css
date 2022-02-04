@@ -1,0 +1,82 @@
+body h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hanoi {
+    height: 400px;
+    background: #F4F4F4;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    column-gap: 300px;
+    justify-content: center;
+    border-bottom: solid gray;
+    border-width: 20px;
+    z-index: 1;
+}
+
+
+.tower {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    background-color: #DB972E;
+    align-items: center;
+    z-index: 2;
+    margin-top: 50px;
+    cursor: pointer
+}
+
+.disk {
+    display: flex;
+    justify-content: center;
+    background-color: #2E8DDB;
+    height: 35px;
+    border-radius: 15px;
+    -webkit-box-shadow: -1px 11px 12px -5px rgba(0,0,0,0.65); 
+    box-shadow: -1px 11px 12px -5px rgba(0,0,0,0.65);
+    z-index: 1;
+}
+
+
+
+.d1 {
+    width: 90px;
+}
+
+.d2 {
+    width: 130px;
+}
+
+.d3 {
+    width: 170px;
+}
+
+.d4 {
+    width: 210px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-top: 10px;
+}
+
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
