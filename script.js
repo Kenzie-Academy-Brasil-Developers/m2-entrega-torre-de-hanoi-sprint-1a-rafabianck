@@ -6,7 +6,10 @@ function validarSeJogoAcabou(torre) {
     if (torre.className != "tower 1" && torre.childElementCount == 4) {
         swal("Victory!", "You won the game!", "success");
     }
-}
+} 
+
+// Não consegui adicionar a notificação de vitória pq essa biblioteca ta ruim (sweetalert)
+// https://sweetalert.js.org/guides/ => <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 var primeiroClique = undefined;
 function registraColuna(event) {
